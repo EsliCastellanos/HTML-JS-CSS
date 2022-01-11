@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Título-->
+    <title>Mi primer sitio web</title>
+    <!--Ícono-->
+    <link rel="icon" type="image/x-icon" href="icons/favicon.ico">
+    <style>
+        hr {
+            margin:auto;
+            width: 700px;
+            border: solid 1px;
+            border-color: rgb(78, 68, 68);
+        }
+
+        .texto {
+            /*Interlineado*/
+            line-height: 30px;
+            /*Fuente*/
+            font-family: Arial;
+            /*Justificado*/
+            text-align: justify;
+            width: 700px;
+            /*Centrar*/
+            margin: auto;           
+        }
+
+        h1  {
+            margin: auto;
+            text-align: center;
+            width: 700px;
+            padding-bottom: 20px;
+        }
+
+        #img {
+            /*Se especifica si un elemento es tratado como un bloque*/
+            display: block;
+            width: 400px;
+            height: 400px;
+            /*Darle un poco de estilo*/
+            border-radius: 10%;
+            margin: auto;
+        }
+
+        #cita {
+            font-family: Arial;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        #first {
+            margin: auto;
+        }
+        table, th, td {
+            border: 1px solid black;
+            padding: 7px;
+        }
+        th {
+            text-align: center;
+            font-size: 18px;
+            background-color: aliceblue;
+        }
+        video   {
+            margin: auto;
+            display: block;
+            border-radius: 12%;
+        }
+  
+      
+
+    </style>
+</head>
+<body>
+    <div id="first">
+        <h1 class="texto">Phrynosoma platyrhinos</h1>
+        <p class="texto">Esta especie de <b>lagarto</b> tiene un cuerpo distinguido plano con una hilera de 
+            escamas a los costados. Tienen una hilera ligeramente alargada de escamas a cada 
+            lado de la garganta. Los colores pueden variar, generalmente siendo estos de una 
+            coloración similar a su hábitat, pero usualmente tienen un color beige o rojizo con 
+            contrastes de un color más oscuro. Poseen dos manchas oscuras en el cuello que son 
+            prominentes y están rodeadas de un color <i>blanco o gris</i>. <mark>También poseen escamas 
+                puntiagudas en la espalda</mark>. Los lagartos jóvenes son similares a los adultos, con la 
+            excepción que las escamas no son tan pronunciadas. Los lagartos cornudos tienen cuernos 
+            que son anchos en la base. </p>
+            <br>
+            <br>
+            <img id="img" src="img/lizard.jpg" title="Esta es una lagartilla escamosa">
+                
+            </img>
+            <p id="cita"><cite>[Armadillo lizard]</cite>. Recuperado de: <a href="https://bit.ly/3FecFXA" target="_blank">https://bit.ly/3FecFXA</a>. Consultado el 10 de enero del 2022.</p>
+            <br>
+    </div>
+    <div>
+        <h2 class="texto">Tipos de lagartijas</h2>
+        <br>
+        <table class="texto">
+             <!--Primer Fila-->
+        <tr>
+            <!--Columnas Encabezados-->
+            <th>Nombre común</th>
+            <th>Familia</th>
+            <th>Especie</th>
+        </tr>
+            <!--Segunda fila-->
+        <tr>
+           <!--Columnas segunda fila-->
+            <td>Salamanquesa común</td>
+            <td>Gekkonidae</td>
+            <td><i>Tarentola Mauritanica</i></td>
+        </tr>
+        <tr>
+            <!--Columnas tercer fila-->
+             <td>Lagartija Verde</td>
+             <td>Teiidae</td>
+             <td><i>Teius teyou</i></td>
+         </tr>
+
+         <tr>
+            <!--Columnas cuarta fila-->
+             <td>Lagartija rayada nortina</td>
+             <td>Lacertidae</td>
+             <td><i>Liolaemus alticolor</i></td>
+         </tr>
+        </table>
+        <p id="cita"><cite>[Tabla 1 Tipos de lagartijas]</cite>. Recuperado de: <a href="https://bit.ly/3K8HzVl" target="_blank">https://bit.ly/3K8HzVl</a>. Consultado el 10 de enero del 2022.</p>
+    </div>
+    <div>
+        <h2 class="texto">Video sin copyright de lagartijas</h2>
+        <br>    
+        <!--Opciones de video: autoplay, loop, controls, muted-->
+        <video src="video/ejemplo.mp4" autoplay muted loop controls title="Este es un video de un reptil"></video>
+        <p id="cita"><cite>[Video ojo reptil]</cite>. Recuperado de: <a href="https://shutr.bz/3GgyRlj" target="_blank">https://shutr.bz/3GgyRlj</a>. Consultado el 10 de enero del 2022.</p>
+            <br>
+        
+    </div>
+  
+    
+</body>
+</html>

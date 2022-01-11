@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contenedores</title>
+    <style>
+        /*Este es un elemento tipo clase*/
+        .perro{
+            background-color:gray;
+        }
+        .gato{
+            background-color: black;
+        }
+        /*Si existe no existe una propiedad declarada, todos los div adquiren estas propiedades*/
+        /*Este es un elemento tipo div, si este no tiene una altura o un ancho y no posee eementos
+        NO SE VISUALIZA en pantalla*/
+        div{
+            background-color: greenyellow;
+            width: 100px;
+            height: 50px;
+        }
+        /*Este es un elemento tipo ID*/
+        #perico {
+            background-color: white;
+            color: green;
+            /*Bold en CSS*/
+            font-weight: bold;
+        }
+        span {
+            color: greenyellow;
+        }
+        #none {
+            background-color: rgb(37, 22, 22);
+        }
+    </style>
+</head>
+<body>
+    <div class="perro">
+        <p>El perro</p>
+    </div>
+    <div class="gato">
+        <p>El gato</p>
+    </div>
+
+    <div>
+        <p id="perico">El perico es <span>verde</span></p>
+    </div>
+    <!--Un contendor que no tiene elementos no es visualizado-->
+    <div id="none">
+
+    </div>
+</body>
+</html>

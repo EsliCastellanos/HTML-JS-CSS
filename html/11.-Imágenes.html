@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imágenes</title>
+</head>
+<body>
+    <p>Imágen local</p>
+    <!--width = ancho, height = alto, src = origen, alt = texto de la imagen-->
+    <img src="img/imagen_ejemplo.jpg" alt="lagartija" width="200" height="200">
+    <br>
+    <hr>
+    <p>Imágen Internet</p>
+    <img src="https://bit.ly/3q0NQtQ" alt="lagartija Internet" title="Este mensaje se muestra al sobreponer el cursor" width="500" height="500">
+    <br>
+    <hr>
+    <p>Imágen Map</p>
+    <!--Se utiliza una figura[shape:circle(círculo), rect(rectángulo), poly(múltiples puntos), default(toda la región)]-->
+    <!--coords [ cículo (eje x, eje y, radio), rectángulo (coors extremo superior izquierdo, coors inferior derecho)]-->
+    <img src="img/imagen_ejemplo.jpg" alt="Workplace" usemap="#workmap">
+    <map name="workmap">
+    <area shape="circle" coords="148,222,44" alt="Coffee" href="Estructura.html">
+    </map>
+    <br>
+    <hr>
+    <!--Permite incluir múltiples imágenes-->
+    <picture>
+        <img src="img/imagen_ejemplo2.jpg">
+        <img src="img/imagen_ejemplo.jpg">
+      </picture>
+</body>
+</html>

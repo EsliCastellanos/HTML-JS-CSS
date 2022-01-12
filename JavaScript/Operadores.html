@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores</title>
+</head>
+<body>
+    <script>
+        /*Operadores aritméticos*/
+        console.log("Operadores aritméticos: ");
+        var a,b = 10, c; // declarar 3 variables pero c no tiene valor, en su 
+        d = 5;
+        e = 11;          // global
+        console.log("Esta es una suma: " + (d + e) );
+        console.log("Esta es una suma: " + d + e );
+        console.log("Esta es una resta: " + ( d - e ));
+        console.log("Esta es una multiplicación: " + ( d * e ));
+        console.log("Esta es una potencia: " + ( d ** e ));
+        console.log("Esta es una división: " + ( e / d ));
+        console.log("Este es el residuo de la división: " + ( e % d )); // residuo de primera división entera
+        console.log("Este es un incremento: " + ( ++d ));
+        console.log("Este es un decremento: " + ( --e ));
+        /*Operadores de Asignación*/
+        console.log("Operadores de asignación: ");
+        var x = 10, y = 5;
+        console.log ("Esta es una igualación: " + (x=y));
+        console.log ("Esta es una suma: " + (x+=y)); // x = x + y; x = 5 + 5 = 10;
+        console.log ("Esta es una resta: " + (x-=y)); // x = x - y; x = 10 - 5
+        console.log ("Esta es una multiplicación: " + (x*=y)); // x = x * y; x = 5 * 5
+        console.log ("Esta es una división: " + (x/=y)); // x = x / y; x = 25 / 5
+        console.log ("Esta es un residuo: " + (x%=y)); // x = x % y; x = 5 % 5
+        console.log ("Esta es una potencia: " + (y**=x)); // y = y ** x; y = 5 ** 0
+        /*Operadores de comparasión*/
+        console.log("Operadores de comparación: ");
+        x=7;
+        // Comparación
+        console.log ("Igual a: " + (x==11));  // falso
+        console.log ("Igual a: " + (x==7));  // verdad
+        console.log ("Igual a: " + (x=="7"));  // verdad
+        // Comparación de tipos Identifica si es el mismo tipo de dato (número)
+        console.log ("Tipo igual a: " + x  + " " +(x===7));  // verdad
+        console.log ("Tipo igual a: " + x  + " " + (x===0b111));  // verdad
+        console.log ("Tipo igual a: " + x  + " " + (x==="7"));  // falso
+        console.log ("Diferente a: " + x  + " " + (x != 2));  // verdad
+        console.log ("Diferente a: " + x  + " " + (x !== "7"));  // verdad
+        console.log ("Mayor que: " + x  + " " + (x > "5"));  // verdad
+        console.log ("Menor que: " + x  + " " + (x < "8"));  // verdad
+        console.log ("Mayor igual que: " + x  + " " + (x <= "7"));  // verdad
+        console.log ("Menor igual que: " + x  + " " + (x <= "7"));  // verdad
+        // "?" Nos permite asignar una palabra o valor cuando es negativo o positivo. 
+        console.log ("Operador ternario: " + x  + " " + ( (x <= "7") ? "menor" : "mayor" ));  // verdad
+         /*Operadores lógicos, usados en condicionales y operaciones*/
+        let paleta = true, limon = true, bolitocha;
+        if (paleta)
+            console.log("Es una paleta");
+        if (!paleta)
+            console.log("No es una paleta");
+        if ( paleta && limon)
+            console.log("Es una paleta de Limón");
+        if ( paleta || bolitocha )
+            console.log("Es un aperitivo");
+
+
+    </script>
+</body>
+</html>

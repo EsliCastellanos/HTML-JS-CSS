@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones</title>
+</head>
+<body>
+    <script>
+        /*FUNCIONES*/
+        // * No importa en que parte del código sean declaradas.
+        function mifuncion (a) {
+
+                return a + 100;
+
+        }
+        console.log(mifuncion);         // Muestra la estructura de la función.
+        console.log (mifuncion(2));     // Muestra el resultado de la función.
+
+        mifuncion2(5);
+        
+        function mifuncion2 (b) {
+
+            console.log( b + 200);
+
+        }
+        /*Función flecha*/
+        a => a + 100;
+        var x = 10;
+        function mifuncion3 () {
+
+            var x = 11;
+            return x;
+
+        }
+        console.log (x);
+        console.log (mifuncion3());
+
+    </script>
+</body>
+</html>

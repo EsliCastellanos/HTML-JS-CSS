@@ -2,15 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Formularios</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkbox</title>
 </head>
 <body>
     <script>
         function hola () {
             var a = document.getElementById('check1');
             var b = document.getElementById('check2');
+            var c = document.getElementById('holis');
             if (a.checked){
                 console.log("Has seleccionado lagartija");
+                /*Manipular css con javascript*/
+                //a.style.visibility='hidden';
+                //c.style.backgroundColor = "blue";
+
+                /*Quitar selección de un check*/
+                //a.checked = false;
             }
                 
             if (b.checked)
@@ -19,31 +28,13 @@
        
     </script>
     <form action="">
-        <label for="">Input tipo texto</label>
-        <br>
-        <input type="text" name="" id="id_text">
-        <br>
-        <label for="">Input tipo checkbox</label>
-        <br>      
+        <legend id="holis">Escoge una opción</legend>
+        <!--El label debe tener el mismo nombre en el "for", como en el id del checkbox-->
         <label for="check1">Lagartijas</label>
+        <!--Para seleccionar por default un check utilizar atributo checked-->
         <input type="checkbox" id="check1" onclick="hola()">
         <label for="check2">Lagartijos</label>
         <input type="checkbox" id="check2" onclick="hola()">
-        <br>
-        
-        <input type="email">
-        <br>
-        <label for="">Contraseña</label>
-        <br>
-        <input type="password" name="" id="">
     </form>
-
-    <form action="/action_page.php">
-        <label for="fname">First name:</label><br>
-        <input type="text" id="fname" name="fname" value="John"><br>
-        <label for="lname">Last name:</label><br>
-        <input type="text" id="lname" name="lname" value="Doe"><br><br>
-        <input type="submit" value="Submit">
-      </form>
 </body>
 </html>

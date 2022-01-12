@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Colores</title>
+</head>
+<body>
+    <script>
+
+        /*Este evento inicializa la función "inicio"*/
+        window.addEventListener("load", inicio, false);
+
+        /*Al cargar la página se inicia la función "inicio", que le asigna a los
+        eventos "input" y "change" las funciones "vistaprevia" y "vistafinal" respectivamente*/
+        function inicio() {
+            var a =document.querySelector("#color1");  
+            /*o a = document.getElementById("color1");*/                  
+            a.addEventListener("input", vistaprevia, false);
+            a.addEventListener("change", vistafinal, false);
+            //a.select();
+        }
+
+        /*Al iniciar vista previa se obtiene el id del párrafo pollito1 y le asigna el color del evento*/
+        function vistaprevia(event) {
+           var p = document.querySelector("#pollito1");          
+            p.style.color = event.target.value;
+            console.log("El color que estás viendo es: " + event.target.value );
+            p.innerHTML = "El color que estás viendo es:" +  event.target.value;
+        }
+        //Cuando se escoja el color y se salga de la interfaz se generará el evento change
+        function vistafinal(event) {
+            var p = document.querySelector("#pollito2");          
+            p.style.color = event.target.value;
+            console.log("El color que elegiste es: " + event.target.value );
+            p.innerHTML = "El color que elegiste es:" +  event.target.value;
+           
+        }
+    </script>
+    <label for="color1">Color:</label>
+    <!--"value" indica el valor default que tendrá el color picker-->
+    <input type="color" value="#ff0000" id="color1">
+    <p id="pollito1">
+        Vista previa
+    </p>
+    <p id="pollito2">Vista final</p>
+    
+</body>
+</html>

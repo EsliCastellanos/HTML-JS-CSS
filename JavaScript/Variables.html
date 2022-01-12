@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+</head>
+<body>
+    <script>
+        /*VARIABLES: una variable es un espacio reservado en memoria*/
+
+        // *El nombre de la variable no debe empezar en un número.
+
+        /*PALABRAS RESERVADAS:
+        break, case, catch, class, const, continue, debugger, default, delete
+        do, else, export, extends, finally, for, function, if, import, in
+        instanceof, new, return, super, switch, this, throw, try, typeof, var
+        void, while, with, yield*/
+
+        //var 1miprimer_variable;
+        var miprimer_variable;  // 
+        let miprimer_variable; // Limitada al bloque o declaración.
+        miprimer_variable = 2;      // Entero
+        miprimer_variable = 22.2;   // Flotante
+        miprimer_variable = "Hola"; // String
+        miprimer_variable = 'Hola';  // String
+        miprimer_variable = 0xFF;   // Hexa
+        miprimer_variable = 0b11;   // Binario
+        miprimer_variable = 0o10;   // Octal
+        miprimer_variable = true;   // Boleano
+        // Si usamos var se declara de manera local en donde la estemos usando, en caso contrario será global.
+        //var_2 = "hola";             // Si no declaramos la variable aún obtiene un valor al asignarle uno;
+
+        //var_2;                      // Si solo la escribimos no es generada en memoria.
+        //miprimer_variable = "\"";   // Para escribir comillas simples o dobles.
+        /* Salto de línea: \n Comilla simple: \' Comilla doble: \" Tabulador: \t Retorno de carro: \r Avance de página:
+        \f Retroceder espacio: \b Contrabarra: \ */
+
+        alert(miprimer_variable);
+        alert(typeof(miprimer_variable));  // Obtener tipo de variable 
+        //Imprimir en consolas
+        // console.log(typeof(miprimer_variable));
+    </script>
+</body>
+</html>

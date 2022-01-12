@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipo de datos</title>
+</head>
+<body>
+    <script>
+        var numero = 16;
+        var cadena = "Hola";
+        var cadena2 = 'Hola de nuevo';
+        var objeto = {nombre : "Esli", apellido: "Castellanos"};
+        console.log (16 + 4 + cadena);
+        console.log (cadena + 16 + 4);
+        /*En JS los datos son dinámicos*/
+        var x;
+        x = 2;
+        x= "HOla";
+        x = objeto;
+        x = "'hola'";
+        x = '"hola"';
+        /*ARRAYS*/
+        var carritos = ["hotwheel", "Micromachine"];
+        console.log(carritos[1]);
+        /*JSON - JavaScript Object Notation*/
+        const json_EWIN = {
+            "temperatura": 20,
+            "humerdad": 89,
+            "wlevel": 2.35,
+            "coor": 275.2
+        };
+        var json_json = {
+            "nodos": {
+                "nodo1": {
+                    "temperatura": 20,
+                    "humerdad": 89,
+                    "wlevel": 2.35,
+                    "coor": 275.2    
+                },
+                "nodo2": {
+                    "temperatura": 1,
+                    "humerdad": 1,
+                    "wlevel": 1,
+                    "coor": 1
+                }    
+            }
+        }
+        //console.log(json_json.nodos.nodo1["temperatura"]);
+        //console.log(json_json["nodos"]["nodo1"]["temperatura"]);
+        console.log("hola");
+        //AGREGAR UN JSON
+        /*json_json.nodos.nodo3 = {
+                    "temperatura": 1,
+                    "humerdad": 1,
+                    "wlevel": 1,
+                    "coor": 1
+                };
+        console.log(json_json);
+        */
+        // ELIMINAR UN JSON
+        //delete json_json.nodos.nodo3;
+        //console.log(json_json);
+        //console.log(json_json.nodos.nodo1.coor);            
+        console.log(typeof(json_EWIN));
+
+        // Para acceder a un JSON
+        console.log(json_EWIN.temperatura);
+        //O
+        console.log(json_EWIN["temperatura"]);
+        /*Indefinido*/
+        var w;
+        console.log(typeof(w));
+        /*Vacío, pero si tiene tipo de datos*/
+        var w = "";
+        console.log(typeof(w));
+
+    </script>
+    <p id="ejemplo"></p>
+</body>
+</html>

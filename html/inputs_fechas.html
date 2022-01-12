@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inputs fechas</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <script>
+        window.addEventListener("load", inicio, false);
+        /*Al cargar la página se inicia la función "inicio", que le asigna al
+        evento "change" la función escoge_fecha*/
+        function inicio() {
+            var a =document.querySelector("#fecha");  
+            /*o a = document.getElementById("fecha");*/                  
+            a.addEventListener("change", escoge_fecha, false);
+            //a.select();
+        }
+        //Cuando se escoja la fecha y se salga de la interfaz se generará el evento change del input date
+        function escoge_fecha(event) {
+        var p = document.querySelector("#calendar");          
+        p.style.color = event.target.value;
+        console.log("La fecha que elegiste es: " + event.target.value );
+        p.innerHTML = "La fecha que elegiste es:" +  event.target.value;        
+        }
+    </script>
+    <form action="">
+        <label for="fecha">Escoge una fecha:</label>
+        <!--"value" indica el valor default de este elemento
+        mientras que "min" indica el valor minimo de fecha mostrado para evitar que el
+        usuario coloque fechas imposibles por ejemplo fechas de nacimiento
+        año-mes-día-->
+        <!--"datetime-local" es utilizado para gestionar tiempos-->
+        <input type="date" id="fecha" value="2018-07-22" min="2018-01-01" max="2018-01-03" required
+        oninvalid="this.setCustomValidity('Introdujiste una fecha incorrecta')"
+        oninput="this.setCustomValidity('')" title="rellena">
+        <!--Al usar la clase "validity" y el atributo "required" el input muestra emnsajes si
+        no se cumplen con las condiciones-->
+        <span class="validity"></span>
+        <p id="calendar"></p>
+        <button type="submit">Comprobar fecha</button>
+    </form>
+   
+</body>
+</html>

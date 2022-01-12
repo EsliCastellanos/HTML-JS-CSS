@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+</head>
+<body>
+    <!--JAVASCRIPT INLINE-->
+    <!--Algunos eventos JS para HTML
+        onchange
+        onclick
+        onmouseover
+        onmouseout
+        onkeydown
+        onload-->
+    <button onclick="document.getElementById('hola').innerHTML='HOLA MUNDO'">Botón Hola mundo</button>
+    <p id="hola"></p>
+    <br>
+    <button onclick="mostrar()">Botón invocar una función</button>
+    <p id="press"></p>
+    <input type="text" id="text">
+    <button onclick="getdata()">Mostrar información en consola</button>
+    <br>
+    <button onmouseover="pisame(1)" onmouseleave="pisame(0)">Písame</button>
+    <script>
+        function mostrar () {
+            var a = document.getElementById('press');
+            var x =2, y =3;
+            
+            a.innerHTML = x * 2;
+        }
+        function pisame (c) {
+            var a = document.getElementById('text');
+            a.value = "";
+            if (c)
+                a.value = "AUCH!";
+            if (!c) 
+            a.value = "hehehe";
+            
+        }
+        function getdata() {
+            var a = document.getElementById('text');
+            console.log(a.value);
+
+        }
+    </script>
+    
+</body>
+</html>
